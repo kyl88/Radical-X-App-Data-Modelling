@@ -1,5 +1,6 @@
 import { application } from "express";
 import mongoose from "mongoose";
+
 const {Schema} =new mongoose.Schema({
 
    company_description:{
@@ -59,8 +60,8 @@ const {Team} =new mongoose.Team({
         required: true,
     }
 
-
-
+   
+    // Team Roles
 
    });
 
@@ -124,6 +125,37 @@ const {Team} =new mongoose.Team({
 
    });
 
-   
+   // Team Admin
+
+const {Admin} =new mongoose.Admin({
+
+    team_admin:{
+
+       type: String,
+       required: true, 
+
+    }
+
+});
+
+// Timeline
+
+const {Timeline} =new mongoose.Timeline({
+
+    start_date:{
+
+       type: Date,
+       required: true, 
+
+    },
+
+    end_date:{
+
+        type: Date,
+        required: true, 
+ 
+     }
+
+});
 
  export default application;
