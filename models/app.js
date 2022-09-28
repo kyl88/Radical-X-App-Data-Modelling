@@ -15,12 +15,7 @@ const {Schema} =new mongoose.Schema({
 
    },
 
-   
-});
-
 // Team Types
-
-const {Team} =new mongoose.Team({
 
     web_development:{
     type: String,
@@ -58,14 +53,11 @@ const {Team} =new mongoose.Team({
     custom_team: {
         type: String,
         required: true,
-    }
+    },
 
    
     // Team Roles
 
-   });
-
-   const {Roles} =new mongoose.Roles({
 
     ios_developer:{
     type: String,
@@ -120,27 +112,20 @@ const {Team} =new mongoose.Team({
     type: String,
     required: true,
                     
-     }
+     },
      
-
-   });
-
    // Team Admin
 
-const {Admin} =new mongoose.Admin({
 
     team_admin:{
 
        type: String,
        required: true, 
 
-    }
+    },
 
-});
 
 // Timeline
-
-const {Timeline} =new mongoose.Timeline({
 
     start_date:{
 
