@@ -66,13 +66,64 @@ const {Team} =new mongoose.Team({
 
    const {Roles} =new mongoose.Roles({
 
-    team_roles:{
+    ios_developer:{
     type: String,
     required: true,
 
+    },
 
-    }
+    android_developer:{
+    type: String,
+    required: true,
+    
+    },
+
+    full_stack_dev:{
+    type: String,
+    required: true,
+        
+    },
+
+    back_end_dev:{
+    type: String,
+    required: true,
+            
+    },
+
+    front_end_dev:{
+    type: String,
+    required: true,
+                
+     },
+
+
+     required_skills:{
+     type: String,
+     required: true,
+        
+    },
+    
+    complimentary_skills:{
+    type: String,
+    required: true,
+            
+    },
+    
+    minimium_hours:{
+    type: Int,
+    required: true,
+                
+    },
+    
+    location_preferences:{
+    type: String,
+    required: true,
+                    
+     }
+     
 
    });
+
+   
 
  export default application;
