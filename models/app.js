@@ -14,8 +14,24 @@ const {Schema} =new mongoose.Schema({
 
    },
 
-   // 
+   // Team Types
 
-})
+  
+
+});
+
+const {Team} =new mongoose.Team({
+
+    web_development:{
+    type: String,
+    required: true,
+
+
+    },
+
+    
+
+
+   });
 
  export default application;
