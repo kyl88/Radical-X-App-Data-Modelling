@@ -14,11 +14,10 @@ const {Schema} =new mongoose.Schema({
 
    },
 
-   // Team Types
-
-  
-
+   
 });
+
+// Team Types
 
 const {Team} =new mongoose.Team({
 
@@ -29,10 +28,50 @@ const {Team} =new mongoose.Team({
 
     },
 
-    
+    mobile_app: {
+        type: String,
+        required: true,
+    },
+
+    growth:{
+
+        type: String,
+        required: true,
+    },
+
+    marketing_website: {
+        type: String,
+        required: true,
+    },
+
+    prototyping: {
+        type: String,
+        required: true,
+    },
+
+    data: {
+        type: String,
+        required: true,
+    },
+
+    custom_team: {
+        type: String,
+        required: true,
+    }
 
 
 
+
+   });
+
+   const {Roles} =new mongoose.Roles({
+
+    team_roles:{
+    type: String,
+    required: true,
+
+
+    }
 
    });
 
