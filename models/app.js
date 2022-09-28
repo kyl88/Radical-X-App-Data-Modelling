@@ -8,7 +8,13 @@ const {Schema} =new mongoose.Schema({
 
    },
 
-   app
+   apprenticeship_description:{
+  type: String,
+  required:true,
+
+   },
+
+   // 
 
 })
 
