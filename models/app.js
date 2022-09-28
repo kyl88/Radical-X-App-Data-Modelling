@@ -111,7 +111,7 @@ const {Team} =new mongoose.Team({
     },
     
     minimium_hours:{
-    type: Int,
+    type: UTF-8,
     required: true,
                 
     },
